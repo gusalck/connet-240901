@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>청룡인 - 청년을 위한 커뮤니티</title>
+  <style>
+    :root {
+      --primary-color: #5479F2;
+      --text-light: #ffffff;
+      --text-dark: #333333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      line-height: 1.6;
+    }
+
+    .header {
+      background-color: var(--primary-color);
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: var(--text-light);
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-menu a {
+      color: var(--text-light);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .main-content {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+    }
+
+    .board-section {
+      background: white;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .sidebar {
+      background: white;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .section-title {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--primary-color);
+    }
+
+    .post-list {
+      list-style: none;
+    }
+
+    .post-item {
+      padding: 1rem 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .button {
+      background-color: var(--primary-color);
+      color: var(--text-light);
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+<header class="header">
+  <div class="header-content">
+    <a href="/" class="logo">청룡인</a>
+    <nav class="nav-menu">
+      <a href="/community">커뮤니티</a>
+      <a href="/mental-health">정신건강정보</a>
+      <a href="/youth-policy">청년정책</a>
+      <a href="/login">로그인</a>
+    </nav>
+  </div>
+</header>
+
+<main class="main-content">
+  <section class="board-section">
+    <h2 class="section-title">인기 게시글</h2>
+    <ul class="post-list">
+      <li class="post-item">
+        <h3>2024년 청년 주거지원 정책 총정리</h3>
+        <p>조회수 1,234 • 댓글 56</p>
+      </li>
+      <li class="post-item">
+        <h3>청년 심리상담 무료지원 후기</h3>
+        <p>조회수 982 • 댓글 43</p>
+      </li>
+    </ul>
+  </section>
+
+  <aside class="sidebar">
+    <div class="policy-info">
+      <h2 class="section-title">최신 청년정책</h2>
+      <ul class="post-list">
+        <li class="post-item">청년도약계좌 신청 안내</li>
+        <li class="post-item">청년 마음건강 지원사업</li>
+      </ul>
+    </div>
+  </aside>
+</main>
+</body>
+</html>
